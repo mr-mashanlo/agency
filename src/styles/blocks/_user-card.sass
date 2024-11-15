@@ -1,0 +1,55 @@
+@use 'config/variables' as variables
+
+.user-card
+  &-small
+    display: flex
+    align-items: center
+    gap: 1.6rem
+    &__image
+      width: 4.8rem
+      height: 4.8rem
+      border-radius: 100%
+      background: variables.$light
+    &__name
+      font-weight: 600
+      font-size: 1.8rem
+      line-height: calc( 24 / 18 )
+      color: variables.$black
+    &__role
+      margin-top: .4rem
+      font-size: 1.4rem
+      line-height: calc( 20 / 14 )
+  &-large
+    aspect-ratio: 152.5 / 203
+    border-radius: 1.2rem
+    overflow: hidden
+    position: relative
+    &:hover
+      .user-card-large__content
+        opacity: 1
+        visibility: visible
+        transform: translateY(0)
+    &__image
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background: variables.$light
+    &__content
+      padding: 0.8rem
+      position: absolute
+      bottom: 1rem
+      left: 2rem
+      right: 2rem
+      font-size: 1.4rem
+      font-weight: 600
+      text-align: center
+      background: variables.$white
+      border-radius: 0.8rem
+      opacity: 0
+      visibility: hidden
+      transform: translateY(1rem)
+      transition: .5s
+    &__name
+      color: variables.$black

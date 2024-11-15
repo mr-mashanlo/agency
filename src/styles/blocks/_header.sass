@@ -1,0 +1,29 @@
+@use 'config/variables' as variables
+
+.header
+  width: 100%
+  padding: 4rem 0
+  background: variables.$white
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 100
+  @media ( variables.$screen-sm )
+    padding: 2.3rem 0
+  &-content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 4rem
+  &-nav
+    display: none
+    @media ( variables.$screen-sm )
+      display: flex
+      align-items: center
+      gap: 4rem
+      font-size: 1.6rem
+      line-height: calc( 24 / 16 )
+  &__button
+    display: none
+    @media ( variables.$screen-sm )
+      display: inline-block

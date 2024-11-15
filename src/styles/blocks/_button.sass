@@ -1,0 +1,22 @@
+@use 'config/variables' as variables
+
+.button
+  display: inline-block
+  padding: 1.8rem 2.7rem
+  font-size: 1.4rem
+  line-height: calc( 20 / 14 )
+  font-weight: 600
+  background: variables.$blue
+  color: variables.$white
+  border-radius: 0.5rem
+  border: none
+  &--sm
+    padding: 1.2rem 1.8rem
+  &--md
+    padding: 1.5rem 2.7rem
+  &--white
+    background: variables.$white
+    color: variables.$black
+  &--pink
+    background: variables.$pink
+    color: variables.$white

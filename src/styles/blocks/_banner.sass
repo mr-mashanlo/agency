@@ -1,0 +1,33 @@
+@use 'config/variables' as variables
+
+.banner
+  &__inner
+    position: relative
+  &__image
+    display: none
+    @media ( variables.$screen-sm )
+      display: block
+      width: 65rem
+      position: absolute
+      bottom: 0
+      left: 2rem
+      z-index: 5
+  &__background
+    padding: 4.5rem 3.5rem
+    border-radius: 3.2rem
+    background: variables.$blue
+    color: variables.$white
+    text-align: center
+    @media ( variables.$screen-sm )
+      padding: 7rem 12rem 7rem 53rem
+  &__content
+    position: relative
+    z-index: 10
+  &__title
+    color: variables.$white
+  &__about
+    margin-top: 1.5rem
+    @media ( variables.$screen-sm )
+      margin: 1.5rem 4rem 0
+  &__button
+    margin-top: 1.5rem

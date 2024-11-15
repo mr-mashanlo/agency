@@ -1,0 +1,37 @@
+@use 'config/variables' as variables
+
+.intro
+  margin-top: 10rem
+  overflow: hidden
+  @media ( variables.$screen-sm )
+    margin-top: 11.7rem
+    padding-bottom: 13rem
+  &__content
+    @media ( variables.$screen-sm )
+      display: grid
+      grid-template-columns: 1.2fr 1fr
+  &__description
+    margin-top: 2.5rem
+    @media ( variables.$screen-sm )
+      margin-top: 2.4rem
+  &__button
+      margin-top: 3.2rem
+  &__rating
+    margin-top: 4.7rem
+    @media ( variables.$screen-sm )
+      margin-top: 8rem
+  &-user-gallery
+    display: none
+    @media ( variables.$screen-sm )
+      margin-right: -12rem
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      gap: 3.2rem 4.5rem
+      transform: rotate(5.24deg) translateX(6rem) translateY(8rem)
+    &__item
+      &:nth-of-type(3n + 1)
+        margin-top: -8.5rem
+      &:nth-of-type(3n + 3)
+        margin-top: -5rem
+    &__user-card-large
+      width: 19.1rem

@@ -1,0 +1,28 @@
+@use 'config/variables' as variables
+
+.question
+  &-grid
+    display: grid
+    @media ( variables.$screen-sm )
+      grid-template-columns: repeat(2, 1fr)
+      gap: 8rem
+  &__accordion
+    margin-top: 2.1rem
+    @media ( variables.$screen-sm )
+      margin-top: 1.7rem
+  &-list
+    display: none
+    @media ( variables.$screen-sm )
+      height: 100%
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      gap: 1rem
+    &__item
+      border-radius: 1.6rem
+      background: variables.$light
+      position: relative
+      overflow: hidden
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover

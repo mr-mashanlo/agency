@@ -1,0 +1,37 @@
+@use 'config/variables' as variables
+
+.service
+  &__grid
+    margin-top: 3.2rem
+    @media ( variables.$screen-sm )
+      margin-top: 7.3rem
+  &-list
+    display: grid
+    gap: 4.8rem
+    @media ( variables.$screen-sm )
+      grid-template-columns: repeat(3, 1fr)
+      gap: 3.2rem 2.5rem
+  &-card
+    padding: 4rem 2.9rem 2.15rem
+    border: 1px solid variables.$light
+    border-radius: 1rem
+    transition: .5s
+    @media ( variables.$screen-sm )
+      padding: 4rem 3.7rem 2.1rem
+    &:hover
+      background: variables.$white
+      box-shadow: 0 0 2rem rgba(variables.$light, .5)
+      border: 1px solid variables.$white
+    &__icon
+      width: 4rem
+      height: 4rem
+    &__title
+      margin-top: 6rem
+    &__content
+      margin-top: 1.2rem
+    &__link
+      display: inline-flex
+      margin-top: 1.6rem
+      color: variables.$blue
+      @media ( variables.$screen-sm )
+        margin-top: 1.6rem

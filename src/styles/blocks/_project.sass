@@ -1,0 +1,37 @@
+@use 'config/variables' as variables
+
+.project
+  &__grid
+    margin-top: 4.3rem
+    @media ( variables.$screen-sm )
+      margin-top: 7.3rem
+  &-list
+    display: grid
+    gap: 1.1rem
+    @media ( variables.$screen-sm )
+      gap: 3rem
+      grid-template-columns: repeat(3, 1fr)
+    &__item
+      &:nth-of-type(6n + 1) .project-card
+        transform: rotate(0.9deg)
+      &:nth-of-type(6n + 2) .project-card
+        transform: rotate(-2.2deg)
+      &:nth-of-type(6n + 3) .project-card
+        transform: rotate(3deg)
+      &:nth-of-type(6n + 4) .project-card
+        transform: rotate(-2.6deg)
+      &:nth-of-type(6n + 5) .project-card
+        transform: rotate(-1deg)
+      &:nth-of-type(6n + 6) .project-card
+        transform: rotate(1.9deg)
+      &:hover .project-card
+        transform: rotate(0deg)
+  &-card
+    transition: .5s
+    &__image
+      width: 98.7%
+      border-radius: 1.6rem
+      aspect-ratio: 381 / 277
+      background: variables.$light
+      @media ( variables.$screen-sm )
+        width: 100%
