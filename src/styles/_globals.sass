@@ -1,0 +1,334 @@
+@use 'config/variables' as variable
+
+html
+  font-size: calc(100vw / 428 * 10)
+  @media ( variable.$screen-sm )
+    font-size: calc(100vw / 1440 * 10)
+
+body
+  font-family: 'Poppins', sans-serif
+  font-size: 1.4rem
+  line-height: 1.71
+  color: variable.$neutral-1
+  @media ( variable.$screen-sm )
+    font-size: 1.8rem
+    line-height: 1.77
+
+.container
+  width: 100%
+  max-width: 114rem
+  margin: 0 auto
+  padding: 0 2.5rem
+  @media ( variable.$screen-sm )
+    padding: 0 1rem
+
+.section
+  &--space-sm
+    padding: 6rem 0
+    @media ( variable.$screen-sm )
+      padding: 5rem 0
+  &--space-t-sm
+    padding-top: 6rem
+    @media ( variable.$screen-sm )
+      padding-top: 5rem
+  &--space-b-sm
+    padding-bottom: 6rem
+    @media ( variable.$screen-sm )
+      padding-bottom: 5rem
+  &--space-md
+    padding: 6rem 0
+    @media ( variable.$screen-sm )
+      padding: 10rem 0
+  &--space-t-md
+    padding-top: 6rem
+    @media ( variable.$screen-sm )
+      padding-top: 10rem
+  &--space-b-md
+    padding-bottom: 6rem
+    @media ( variable.$screen-sm )
+      padding-bottom: 10rem
+  &--space-lg
+    padding: 6rem 0
+    @media ( variable.$screen-sm )
+      padding: 20rem 0
+  &--space-t-lg
+    padding-top: 6rem
+    @media ( variable.$screen-sm )
+      padding-top: 20rem
+  &--space-b-lg
+    padding-bottom: 6rem
+    @media ( variable.$screen-sm )
+      padding-bottom: 20rem
+  &__content
+    margin-top: 6rem
+  &__content-lg
+    margin-top: 8rem
+
+.snippet
+  &--center
+    text-align: center
+  &--wide
+    max-width: 55rem
+    margin: 0 auto
+  &__content-sm
+    margin-top: .8rem
+  &__content-md
+    margin-top: 1.6rem
+  &__content-lg
+    margin-top: 2.4rem
+  &__content-xl
+    margin-top: 3.2rem
+
+.title
+  font-weight: 600
+  &--h1
+    font-size: 2.4rem
+    line-height: 1.33
+    @media ( variable.$screen-sm )
+      font-size: 5.6rem
+      line-height: 1.28
+      letter-spacing: -0.02rem
+  &--h2
+    font-size: 2rem
+    line-height: 1.4
+    @media ( variable.$screen-sm )
+      font-size: 4.2rem
+      line-height: 1.33
+      letter-spacing: -0.01rem
+  &--h3
+    font-size: 2.4rem
+    line-height: 1.33
+  &--h4
+    font-size: 2rem
+    line-height: 1.4
+
+.text
+  &-regular
+    font-weight: 400
+  &-medium
+    font-weight: 500
+  &-semibold
+    font-weight: 600
+  &-bold
+    font-weight: 700
+  &-blue
+    color: variable.$primary-1
+  &-orange
+    color: variable.$primary-2
+  &-red
+    color: variable.$primary-3
+  &-green
+    color: variable.$primary-4
+  &-gray
+    color: variable.$neutral-2
+  &-silver
+    color: variable.$neutral-3
+  &-white
+    color: variable.$white
+  &-sm
+    font-size: 1.6rem
+  &-md
+    font-size: 1.8rem
+  &-lg
+    font-size: 2.8rem
+    line-height: 1.45
+
+.form
+  &__label
+    position: relative
+  &__button
+    width: 2.5rem
+    height: 2.5rem
+    padding: 0
+    border: none
+    position: absolute
+    right: 1rem
+    top: 50%
+    z-index: 10
+    transform: translateY(-50%)
+    @media ( variable.$screen-sm )
+      width: 3rem
+      height: 3rem
+      right: 2rem
+  &__icon
+    display: block
+    width: 100%
+
+.input
+  width: 100%
+  padding: 1.2rem
+  line-height: 1.71
+  font-size: 1.4rem
+  font-weight: 600
+  background: variable.$neutral-4
+  border: none
+  border-radius: 1.2rem
+  @media ( variable.$screen-sm )
+    max-width: 50rem
+    padding: 1.9rem
+    font-size: 1.6rem
+    line-height: 1.625
+  &:focus
+    outline: .2rem solid variable.$primary-1
+
+.button
+  padding: 1.2rem 3.5rem
+  line-height: 1.71
+  font-size: 1.4rem
+  font-weight: 600
+  text-align: center
+  border-radius: 1.2rem
+  border: none
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  gap: 1.6rem
+  background: variable.$primary-1
+  color: variable.$white
+  white-space: nowrap
+  @media ( variable.$screen-sm )
+    padding: 1.9rem 3.5rem
+    font-size: 1.6rem
+    line-height: 1.625
+  &__icon
+    width: 1.4rem
+    @media ( variable.$screen-sm )
+      width: 2rem
+
+.circle-button
+  padding: 1.3rem
+  border-radius: 4rem
+  border: none
+  background: variable.$neutral-4
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  &__icon
+    width: 2rem
+    height: 2rem
+
+.brand
+  &__image
+    width: 4.8rem
+    height: 4.8rem
+
+.heading
+  text-align: center
+  &__title
+    font-size: 1.6rem
+    line-height: 1.5
+    @media ( variable.$screen-sm )
+      font-size: 2rem
+      line-height: 1.4
+  &__subtitle
+    margin-top: 2rem
+
+.block
+  display: block
+
+.flex
+  display: flex
+  &--cols
+    flex-direction: column
+  &--rows
+    flex-direction: row
+  &--items-center
+    align-items: center
+  &--justify-center
+    justify-content: center
+  &--justify-between
+    justify-content: space-between
+  &--wrap
+    flex-wrap: wrap
+  &--gap-md
+    gap: 3.2rem
+  &--gap-lg
+    gap: 6rem
+
+.grid
+  display: grid
+  &--cols-one
+    gap: 6rem
+  &--sm-cols-two
+    gap: 4rem
+    @media ( variable.$screen-sm )
+      grid-template-columns: repeat(2, 1fr)
+  &--sm-cols-three
+    gap: 2.4rem
+    @media ( variable.$screen-sm )
+      grid-template-columns: repeat(3, 1fr)
+      gap: 6rem 3.2rem
+
+.masonry
+  &__item
+    width: 100%
+    padding: 1rem
+    @media ( variable.$screen-sm )
+      width: 33.3%
+  &__image
+    width: 100%
+    border-radius: .5rem
+
+.card
+  min-height: 19rem
+  border-radius: 2rem
+  background: variable.$white
+  box-shadow: -1rem 3rem 7rem rgba(#DBDEE1, .4)
+  @media ( variable.$screen-sm )
+    min-height: 30rem
+  &__content-md
+    padding: 3rem
+  &__content-lg
+    padding: 4.4rem 3rem
+
+.banner
+  padding: 6rem 3rem
+  border-radius: 2rem
+  @media ( variable.$screen-sm )
+    padding: 6rem 6rem 8rem
+  &--yellow
+    background: variable.$primary-7
+    color: variable.$white
+  &--blue
+    background: variable.$primary-1
+    color: variable.$white
+  &--gray
+    background: variable.$neutral-5
+
+.star
+  display: inline-flex
+  align-items: center
+  gap: 1rem
+  &__icon
+    width: 1.6rem
+    height: 1.6rem
+
+.video
+  position: relative
+  &__icon
+    width: 3rem
+    height: 3rem
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    @media ( variable.$screen-sm )
+      width: 8rem
+      height: 8rem
+  &__image
+    width: 100%
+    border-radius: 1rem
+    @media ( variable.$screen-sm )
+      border-radius: 2rem
+
+.bg
+  &-silver
+    background: variable.$neutral-5
+  &-orange
+    background: variable.$primary-6
+  &-blue
+    background: variable.$primary-5
+
+.hidden
+  overflow: hidden

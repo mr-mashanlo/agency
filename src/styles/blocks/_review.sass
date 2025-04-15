@@ -1,0 +1,59 @@
+@use 'config/variables' as variable
+
+.review
+  overflow: hidden
+  position: relative
+
+  .swiper
+    &-pagination
+      width: 100%
+      height: .4rem
+      position: absolute
+      bottom: 6rem
+      left: 50%
+      transform: translateX(-50%)
+      z-index: 10
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: .4rem
+      @media ( variable.$screen-sm )
+        bottom: 10rem
+      &-bullet
+        display: block
+        width: 1.5rem
+        height: .4rem
+        border-radius: 1rem
+        background: #FFCC00
+        transition: .3s
+        &-active
+          background: variable.$white
+    &-prev
+      position: absolute
+      top: 50%
+      left: 2rem
+      transform: translateY(-50%)
+      z-index: 10
+      @media ( variable.$screen-sm )
+        left: 16rem
+    &-next
+      position: absolute
+      top: 50%
+      right: 2rem
+      transform: translateY(-50%)
+      z-index: 10
+      @media ( variable.$screen-sm )
+        right: 16rem
+
+.quote-card
+  max-width: 29rem
+  margin: 0 auto
+  text-align: center
+  @media ( variable.$screen-sm )
+    max-width: 73rem
+  &__icon
+    width: 6rem
+    height: 4.7rem
+    margin: 0 auto
+  &__content
+    margin-top: 4.4rem

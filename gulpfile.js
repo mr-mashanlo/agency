@@ -1,37 +1,20 @@
-import pkg from 'gulp';
-
+import babel from '@rollup/plugin-babel';
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from '@rollup/plugin-node-resolve';
+import terser from '@rollup/plugin-terser';
 import browserSync from 'browser-sync';
-import { hideBin } from 'yargs/helpers';
 import { deleteAsync } from 'del';
+import pkg from 'gulp';
+import fileinclude from 'gulp-file-include';
 import gulpIf from 'gulp-if';
 import newer from 'gulp-newer';
-import rename from 'gulp-rename';
-
-import fileinclude from 'gulp-file-include';
-import htmlmin from 'gulp-htmlmin';
-
-import gulpSass from 'gulp-sass';
-import * as dartSass from 'sass';
-
 import postcss from 'gulp-postcss';
-import cssnano from 'cssnano';
-import purgecss from '@fullhuman/postcss-purgecss';
-import autoprefixer from 'autoprefixer';
-import sortMediaQueries from 'postcss-sort-media-queries';
-import mergeRules from 'postcss-merge-rules';
-import discardComments from 'postcss-discard-comments';
-import discardDuplicates from 'postcss-discard-duplicates';
-import discardUnused from 'postcss-discard-unused';
-
-import webpackStream from 'webpack-stream';
-import TerserPlugin from 'terser-webpack-plugin';
-
-import webp from 'gulp-webp';
+import rename from 'gulp-rename';
+import gulpSass from 'gulp-sass';
 import ttf2woff2 from 'gulp-ttf2woff2';
-
-const { dest, parallel, series, src, watch } = pkg;
-const sass = gulpSass( dartSass );
-const isDevMode = hideBin( process.argv ).includes( '--dev' );
+import webp from 'gulp-webp';
+import { rollup } from 'rollup';
+import * as dartSass from 'sass';
 
 const paths = {
   html: {
@@ -40,13 +23,13 @@ const paths = {
     watch: 'src/**/*.html'
   },
   styles: {
-    src: 'src/styles/[^_]*.sass',
+    src: 'src/styles/main.sass',
     dest: 'dist/styles/',
     watch: 'src/styles/**/*.sass'
   },
   scripts: {
     src: 'src/scripts/main.js',
-    dest: 'dist/scripts/',
+    dest: 'dist/scripts/main.min.js',
     watch: 'src/scripts/**/*.js'
   },
   images: {
@@ -61,98 +44,77 @@ const paths = {
   }
 };
 
-function server() {
-  browserSync.init( {
-    server: { baseDir: 'dist/' },
-    notify: false,
-    open: false
-  } );
+const { dest, parallel, series, src, watch } = pkg;
+const sass = gulpSass( dartSass );
+
+function html() {
+  return src( paths.html.src )
+    .pipe( fileinclude() )
+    .pipe( dest( paths.html.dest ) )
+    .pipe( browserSync.stream() )
 }
 
-function watcher() {
-  watch( paths.html.watch, parallel( html, styles ) );
-  watch( paths.styles.watch, styles );
-  watch( paths.scripts.watch, scripts );
-  watch( paths.images.watch, images );
-  watch( paths.fonts.watch, fonts );
+function styles() {
+  return src( paths.styles.src )
+    .pipe( sass().on( 'error', sass.logError ) )
+    .pipe( postcss() )
+    .pipe( rename( { suffix: '.min' } ) )
+    .pipe( dest(paths.styles.dest) )
+    .pipe( browserSync.stream() )
+}
+
+async function scripts() {
+  const bundle = await rollup({
+    input: paths.scripts.src,
+    plugins: [ resolve(), commonjs(), babel( { babelHelpers: 'bundled' } ), terser() ]
+  });
+
+  await bundle.write({
+    file: paths.scripts.dest,
+    format: 'iife'
+  });
+
+  return src(paths.scripts.src)
+    .pipe( browserSync.stream() )
+}
+
+function images() {
+  return src( paths.images.src )
+    .pipe( newer( { dest:paths.images.dest, ext: '.webp' } ) )
+    .pipe( newer( { dest:paths.images.dest, ext: '.svg' } ) )
+    .pipe( gulpIf( file => [ '.png', '.jpg', '.jpeg' ].includes( file.extname ), webp( { quality: 100 } ) ) )
+    .pipe( dest(paths.images.dest) )
+}
+
+function fonts() {
+  return src( paths.fonts.src, { encoding: false } )
+    .pipe( newer( { dest: paths.fonts.dest, ext: '.woff2' } ) )
+    .pipe( gulpIf( file => [ '.ttf' ].includes( file.extname ), ttf2woff2() ) )
+    .pipe( dest( paths.fonts.dest ) )
 }
 
 async function clean() {
   return await deleteAsync( [ 'dist/' ] );
 }
 
-function html() {
-  return src( paths.html.src )
-    .pipe( fileinclude() )
-    .pipe( gulpIf( !isDevMode, htmlmin( { collapseWhitespace: true, removeComments: true, removeEmptyAttributes: false } ) ) )
-    .pipe( dest( paths.html.dest ) )
-    .pipe( browserSync.stream() );
+function serve() {
+  browserSync.init( {
+    server: { baseDir: 'dist/' },
+    notify: false,
+    open: false
+  });
+
+  watch( paths.html.watch, parallel( html, styles ) );
+  watch( paths.styles.watch, styles );
+  watch( paths.scripts.watch, scripts );
+  watch( paths.images.watch, images );
 }
 
-function styles() {
-  return src( paths.styles.src )
-    .pipe( sass().on( 'error', sass.logError ) )
-    .pipe( postcss( [
-      purgecss( { content: [ paths.html.watch ], safelist: [] } ),
-      discardUnused(),
-      discardDuplicates(),
-      discardComments( { removeAll: true } ),
-      mergeRules(),
-      autoprefixer(),
-      sortMediaQueries(),
-      cssnano()
-    ] ) )
-    .pipe( rename( { suffix: '.min' } ) )
-    .pipe( dest( paths.styles.dest ) )
-    .pipe( browserSync.stream() );
-}
+const build = series( clean, fonts, images, parallel( html, styles, scripts ) );
 
-function scripts() {
-  return src( paths.scripts.src )
-    .pipe( webpackStream( {
-      mode: !isDevMode ? 'production' : 'development',
-      performance: { hints: false },
-      module: {
-        rules: [
-          {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: [ '@babel/preset-env' ]
-              }
-            }
-          }
-        ]
-      },
-      optimization: {
-        minimize: !isDevMode,
-        minimizer: [ new TerserPlugin() ]
-      },
-      output: { filename: 'main.min.js' }
-    } ) )
-    .pipe( dest( paths.scripts.dest ) )
-    .pipe( browserSync.stream() );
-}
+const dev = series( build, serve );
 
-function images() {
-  return src( paths.images.src )
-    .pipe( newer( paths.images.dest ) )
-    .pipe( gulpIf( file => [ '.png', '.jpg', '.jpeg' ].includes( file.extname ), webp() ) )
-    .pipe( dest( paths.images.dest ) )
-    .pipe( browserSync.stream() );
-}
-
-function fonts() {
-  return src( paths.fonts.src, { encoding: false } )
-    .pipe( newer( paths.fonts.dest ) )
-    .pipe( gulpIf( file => [ '.ttf' ].includes( file.extname ), ttf2woff2() ) )
-    .pipe( dest( paths.fonts.dest ) )
-    .pipe( browserSync.stream() );
-}
-
-const build = series( clean, fonts, images, parallel( html, styles, scripts ), isDevMode ? parallel( server, watcher ) : () => Promise.resolve() );
-const preview = server;
-
-export { build as default, preview };
+export {
+  dev as default,
+  build
+};

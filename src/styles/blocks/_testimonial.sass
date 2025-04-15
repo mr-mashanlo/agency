@@ -1,38 +1,11 @@
-@use 'config/variables' as variables
+@use 'config/variables' as variable
 
-.testimonial
+.testimonial-card
+  margin-top: 6rem
+  &__icon
+    width: 12rem
+    height: 12rem
+    margin: -10rem auto 0
+    border-radius: 100%
   &__content
-    @media ( variables.$screen-sm )
-      margin-bottom: 9rem
-    &:not(.swiper-initialized)
-      .swiper-wrapper
-        display: flex
-        gap: 3.3rem
-      .swiper-slide
-        width: calc( 100% / 3.5 )
-  .swiper-wrapper
-    padding-bottom: 1.6rem
-    transition-timing-function: linear
-    @media ( variables.$screen-sm )
-      padding: 2rem 0
-  &-card
-    padding: 1.4rem
-    display: flex
-    align-items: center
-    gap: 1.4rem
-    background: variables.$white
-    box-shadow: 0 .5rem 1rem rgba(variables.$light, .8)
-    border-radius: 10rem
-    @media ( variables.$screen-sm )
-      padding: 2.1rem
-      box-shadow: 0 1rem 2rem rgba(variables.$light, .8)
-    &__image
-      width: 5.2rem
-      height: 5.2rem
-      border-radius: 100%
-    &__content
-      font-size: 1.4rem
-      line-height: calc( 30 / 14 )
-  &__top-swiper
-    @media ( variables.$screen-sm )
-      margin-top: 3.8rem
+    margin-top: 3rem

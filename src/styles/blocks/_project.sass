@@ -1,37 +1,33 @@
-@use 'config/variables' as variables
+@use 'config/variables' as variable
 
 .project
-  &__grid
-    margin-top: 4.3rem
-    @media ( variables.$screen-sm )
-      margin-top: 7.3rem
-  &-list
-    display: grid
-    gap: 1.1rem
-    @media ( variables.$screen-sm )
-      gap: 3rem
-      grid-template-columns: repeat(3, 1fr)
-    &__item
-      &:nth-of-type(6n + 1) .project-card
-        transform: rotate(0.9deg)
-      &:nth-of-type(6n + 2) .project-card
-        transform: rotate(-2.2deg)
-      &:nth-of-type(6n + 3) .project-card
-        transform: rotate(3deg)
-      &:nth-of-type(6n + 4) .project-card
-        transform: rotate(-2.6deg)
-      &:nth-of-type(6n + 5) .project-card
-        transform: rotate(-1deg)
-      &:nth-of-type(6n + 6) .project-card
-        transform: rotate(1.9deg)
-      &:hover .project-card
-        transform: rotate(0deg)
   &-card
-    transition: .5s
+    background: variable.$neutral-5
+    border-radius: 2rem
+    display: grid
+    overflow: hidden
+    @media ( variable.$screen-sm )
+      grid-template-columns: 1fr 2.5fr
+    &--blue
+      background: variable.$primary-1
+      color: variable.$white
+    &--red
+      background: variable.$primary-3
+      color: variable.$white
+    &--dark
+      background: variable.$primary-5
+      color: variable.$white
+    &__content
+      padding: 3rem 3rem 1.5rem 3rem
+      display: flex
+      align-items: center
+      justify-content: center
+      @media ( variable.$screen-sm )
+        padding: 3rem 3rem 3rem 6rem
+    &__figure
+      padding: 1.5rem 3rem 0 3rem
+      @media ( variable.$screen-sm )
+        padding: 4rem 6rem 0 3rem
     &__image
-      width: 98.7%
-      border-radius: 1.6rem
-      aspect-ratio: 381 / 277
-      background: variables.$light
-      @media ( variables.$screen-sm )
-        width: 100%
+      width: 100%
+      margin-bottom: -.5rem

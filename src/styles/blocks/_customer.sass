@@ -1,0 +1,10 @@
+@use 'config/variables' as variable
+
+.customer
+  &__icon
+    max-width: 17rem
+  &__flex
+    flex-direction: column
+    align-items: center
+    @media ( variable.$screen-sm )
+      flex-direction: row

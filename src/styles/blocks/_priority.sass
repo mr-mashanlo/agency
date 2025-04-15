@@ -1,0 +1,8 @@
+@use 'config/variables' as variable
+
+.priority
+  &__content
+    display: grid
+    gap: 7.5rem
+    @media ( variable.$screen-sm )
+      grid-template-columns: 1.25fr 1fr

@@ -1,36 +1,7 @@
-@use 'config/variables' as variables
+@use 'config/variables' as variable
 
 .team
-  &__swiper
-    width: 100%
-    max-width: 123rem
-    margin: 2rem auto 0
-    padding: 0 1.5rem
-    &:not(.swiper-initialized)
-      .swiper-wrapper
-        display: flex
-        gap: 3.3rem
-      .swiper-slide
-        width: calc( 100% / 7 )
-    .swiper-wrapper
-      padding: 3.3rem 0
-      @media ( variables.$screen-sm )
-        padding: 3.1rem 0
-    .swiper-slide
-      .user-card-large
-        transition: .5s
-        &:hover
-          transform: scale(1.1) !important
-      &:nth-of-type(6n + 1) .user-card-large
-        transform: rotate(-2deg)
-      &:nth-of-type(6n + 2) .user-card-large
-        transform: rotate(1.5deg)
-      &:nth-of-type(6n + 3) .user-card-large
-        transform: rotate(-1deg)
-      &:nth-of-type(6n + 4) .user-card-large
-        transform: rotate(3.4deg)
-      &:nth-of-type(6n + 5) .user-card-large
-        transform: rotate(-0.7deg)
-      &:nth-of-type(6n + 6) .user-card-large
-        transform: rotate(3.9deg)
-    
+  &-card
+    &__image
+      width: 100%
+      border-radius: 2rem
