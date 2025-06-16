@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 @@include('./parts/head.html', { 'title': 'Home Page', 'description': '' })
 
@@ -8,644 +8,671 @@
 
     @@include('./parts/header.html')
 
-    <section id="intro" class="intro">
-      <div class="container">
-        <div class="snippet intro__snipper">
-          <h1 class="intro__title title title--h1">Make your business <span class="text-orange">more powerful</span> with&nbsp;us</h1>
-          <p class="snippet__content-lg intro__subtitle text-gray">We provide various services to make your business grow and get bigger. Your satisfaction is our first priority.</p>
-          <div class="snippet__content-lg">
-            <a href="#" class="button">
-              <span>Get Started</span>
-              <svg class="button__icon" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.5 8.19141H21.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M14.5 1.19141L21.5 8.19141L14.5 15.1914" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+    <main>
+
+      <section aria-labelledby="intro-heading" id="intro" class="intro">
+        <div class="container">
+          <div class="snippet intro__snipper">
+            <h1 id="intro-heading" class="intro__title title title--h1">Make your business <strong class="text-blue">more powerful</strong> with&nbsp;us</h1>
+            <p class="snippet__content-lg intro__subtitle text-gray">We provide various services to make your business grow and get bigger. Your satisfaction is our first priority.</p>
+            <div class="snippet__content-lg">
+              <a href="start.html" class="button">
+                <span>Get Started</span>
+                <svg aria-hidden="true" class="button__icon" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 8.19141H21.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.5 1.19141L21.5 8.19141L14.5 15.1914" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" aria-labelledby="service-heading" class="section section--space-md service">
+        <div class="container">
+          <div class="heading">
+            <h2 id="service-heading" class="heading__title title title--h4 text-red">Our Services</h2>
+            <p class="heading__subtitle title title--h2">The various services we provide to make your business more powerful</p>
+          </div>
+          <div class="section__content">
+            <ul aria-label="List of services we offer" class="grid grid--sm-cols-three">
+              <li class="grid__item">
+                <article class="card service-card">
+                  <div class="card__content-lg">
+                    <img src="images/service-1.svg" alt="" aria-hidden="true" class="service-card__icon">
+                    <div class="service-card__content">
+                      <div class="snippet">
+                        <h3 class="title title--h4">Ideate</h3>
+                        <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
+                      </div>
+                    </div>
+                    <div class="service-card__content">
+                      <a href="ideate.html" aria-label="Read more about ideate" class="circle-button">
+                        <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Read more about ideate</title>
+                          <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card service-card">
+                  <div class="card__content-lg">
+                    <img src="images/service-2.svg" alt="" aria-hidden="true" class="service-card__icon">
+                    <div class="service-card__content">
+                      <div class="snippet">
+                        <h3 class="title title--h4">Design</h3>
+                        <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
+                      </div>
+                    </div>
+                    <div class="service-card__content">
+                      <a href="design.html" aria-label="Read more about design" class="circle-button">
+                        <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Read more about design</title>
+                          <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card service-card">
+                  <div class="card__content-lg">
+                    <img src="images/service-3.svg" alt="" aria-hidden="true" class="service-card__icon">
+                    <div class="service-card__content">
+                      <div class="snippet">
+                        <h3 class="title title--h4">Web Development</h3>
+                        <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
+                      </div>
+                    </div>
+                    <div class="service-card__content">
+                      <a href="web.html" aria-label="Read more about web development" class="circle-button">
+                        <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Read more about web development</title>
+                          <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card service-card">
+                  <div class="card__content-lg">
+                    <img src="images/service-4.svg" alt="" aria-hidden="true" class="service-card__icon">
+                    <div class="service-card__content">
+                      <div class="snippet">
+                        <h3 class="title title--h4">App Development</h3>
+                        <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
+                      </div>
+                    </div>
+                    <div class="service-card__content">
+                      <a href="app.html" aria-label="Read more about app development" class="circle-button">
+                        <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Read more about app development</title>
+                          <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card service-card">
+                  <div class="card__content-lg">
+                    <img src="images/service-5.svg" alt="" aria-hidden="true" class="service-card__icon">
+                    <div class="service-card__content">
+                      <div class="snippet">
+                        <h3 class="title title--h4">Business Growth</h3>
+                        <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
+                      </div>
+                    </div>
+                    <div class="service-card__content">
+                      <a href="business.html" aria-label="Read more about business growth" class="circle-button">
+                        <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Read more about business growth</title>
+                          <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card service-card">
+                  <div class="card__content-lg">
+                    <img src="images/service-6.svg" alt="" aria-hidden="true" class="service-card__icon">
+                    <div class="service-card__content">
+                      <div class="snippet">
+                        <h3 class="title title--h4">Digital marketing</h3>
+                        <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
+                      </div>
+                    </div>
+                    <div class="service-card__content">
+                      <a href="marketing.html" aria-label="Read more about digital marketing" class="circle-button">
+                        <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Read more about digital marketing</title>
+                          <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="documentation" aria-labelledby="documentation-heading" class="section section--space-md documentation">
+        <div class="container">
+          <div class="heading">
+            <h2 id="documentation-heading" class="heading__title title title--h4 text-red">Our Documentation</h2>
+            <p class="heading__subtitle title title--h2">See what our profile is like and how we work for your business</p>
+          </div>
+          <div class="section__content">
+            <a href="https://www.youtube-nocookie.com/embed/ZzN9A2dlADo" class="glightbox video">
+              <img src="images/play.svg" alt="" aria-hidden="true" class="video__icon">
+              <img src="images/video-1.webp" alt="How we work for your business" class="video__image">
             </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="service" class="section section--space-md service">
-      <div class="container">
-        <div class="heading">
-          <h2 class="heading__title title title--h4 text-red">Our Services</h2>
-          <p class="heading__subtitle title title--h2">The various services we provide to make your business more powerful</p>
-        </div>
-        <div class="section__content">
-          <ul class="grid grid--sm-cols-three">
-            <li class="grid__item">
-              <article class="card service-card">
-                <div class="card__content-lg">
-                  <img src="images/service-1.svg" alt="" class="service-card__icon">
-                  <div class="service-card__content">
-                    <div class="snippet">
-                      <h3 class="title title--h4">Ideate</h3>
-                      <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
+      <section id="priority" aria-labelledby="priority-heading" class="section section--space-md priority bg-silver">
+        <div class="container">
+          <div class="priority__content">
+            <ul aria-label="Reasons our customers trust us" class="grid grid--sm-cols-two">
+              <li class="grid__item">
+                <div class="card flex flex--items-center flex--justify-center">
+                  <div class="card__content-lg">
+                    <div class="heading">
+                      <span class="block title title--h1 text-blue">70+</span>
+                      <span class="block heading__subtitle text-gray">We have more than customers</span>
                     </div>
                   </div>
-                  <div class="service-card__content">
-                    <a href="" class="circle-button">
-                      <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
-                      </svg>
-                    </a>
-                  </div>
                 </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card service-card">
-                <div class="card__content-lg">
-                  <img src="images/service-2.svg" alt="" class="service-card__icon">
-                  <div class="service-card__content">
-                    <div class="snippet">
-                      <h3 class="title title--h4">Design</h3>
-                      <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
+              </li>
+              <li class="grid__item">
+                <div class="card flex flex--items-center flex--justify-center">
+                  <div class="card__content-lg">
+                    <div class="heading">
+                      <span class="block title title--h1 text-orange">100+</span>
+                      <span class="block heading__subtitle text-gray">Projects we have completed</span>
                     </div>
                   </div>
-                  <div class="service-card__content">
-                    <a href="" class="circle-button">
-                      <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
-                      </svg>
-                    </a>
-                  </div>
                 </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card service-card">
-                <div class="card__content-lg">
-                  <img src="images/service-3.svg" alt="" class="service-card__icon">
-                  <div class="service-card__content">
-                    <div class="snippet">
-                      <h3 class="title title--h4">Web Development</h3>
-                      <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
+              </li>
+              <li class="grid__item">
+                <div class="card flex flex--items-center flex--justify-center">
+                  <div class="card__content-lg">
+                    <div class="heading">
+                      <span class="block title title--h1 text-red">10M+</span>
+                      <span class="block heading__subtitle text-gray">People who are helped because of our hard work</span>
                     </div>
                   </div>
-                  <div class="service-card__content">
-                    <a href="" class="circle-button">
-                      <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
-                      </svg>
-                    </a>
-                  </div>
                 </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card service-card">
-                <div class="card__content-lg">
-                  <img src="images/service-4.svg" alt="" class="service-card__icon">
-                  <div class="service-card__content">
-                    <div class="snippet">
-                      <h3 class="title title--h4">App Development</h3>
-                      <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
+              </li>
+              <li class="grid__item">
+                <div class="card flex flex--items-center flex--justify-center">
+                  <div class="card__content-lg">
+                    <div class="heading">
+                      <span class="block title title--h1 text-green">200+</span>
+                      <span class="block heading__subtitle text-gray">Support from world-renowned companies</span>
                     </div>
                   </div>
-                  <div class="service-card__content">
-                    <a href="" class="circle-button">
-                      <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
-                      </svg>
-                    </a>
-                  </div>
                 </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card service-card">
-                <div class="card__content-lg">
-                  <img src="images/service-5.svg" alt="" class="service-card__icon">
-                  <div class="service-card__content">
-                    <div class="snippet">
-                      <h3 class="title title--h4">Business Growth</h3>
-                      <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
-                    </div>
-                  </div>
-                  <div class="service-card__content">
-                    <a href="" class="circle-button">
-                      <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card service-card">
-                <div class="card__content-lg">
-                  <img src="images/service-6.svg" alt="" class="service-card__icon">
-                  <div class="service-card__content">
-                    <div class="snippet">
-                      <h3 class="title title--h4">Digital marketing</h3>
-                      <p class="snippet__content-md text-md text-gray">We help you develop creative ideas so that your business can grow more rapidly</p>
-                    </div>
-                  </div>
-                  <div class="service-card__content">
-                    <a href="" class="circle-button">
-                      <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#4C40F7"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="documentation" class="section section--space-md documentation">
-      <div class="container">
-        <div class="heading">
-          <h2 class="heading__title title title--h4 text-red">Our Documentation</h2>
-          <p class="heading__subtitle title title--h2">See what our profile is like and how we work for your business</p>
-        </div>
-        <div class="section__content">
-          <a href="https://www.youtube-nocookie.com/embed/ZzN9A2dlADo" class="glightbox video">
-            <img src="images/play.svg" alt="" class="video__icon">
-            <img src="images/video-1.webp" alt="" class="video__image">
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="priority" class="section section--space-md priority bg-silver">
-      <div class="container">
-        <div class="priority__content">
-          <ul class="grid grid--sm-cols-two">
-            <li class="grid__item">
-              <div class="card flex flex--items-center flex--justify-center">
-                <div class="card__content-lg">
-                  <div class="heading">
-                    <span class="block title title--h1 text-blue">70+</span>
-                    <span class="block heading__subtitle text-gray">We have more than customers</span>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="grid__item">
-              <div class="card flex flex--items-center flex--justify-center">
-                <div class="card__content-lg">
-                  <div class="heading">
-                    <span class="block title title--h1 text-orange">100+</span>
-                    <span class="block heading__subtitle text-gray">Projects we have completed</span>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="grid__item">
-              <div class="card flex flex--items-center flex--justify-center">
-                <div class="card__content-lg">
-                  <div class="heading">
-                    <span class="block title title--h1 text-red">10M+</span>
-                    <span class="block heading__subtitle text-gray">People who are helped because of our hard work</span>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="grid__item">
-              <div class="card flex flex--items-center flex--justify-center">
-                <div class="card__content-lg">
-                  <div class="heading">
-                    <span class="block title title--h1 text-green">200+</span>
-                    <span class="block heading__subtitle text-gray">Support from world-renowned companies</span>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="snippet">
-            <h2 class="title title--h1">Customer satisfaction is our first priority</h2>
-            <p class="snippet__content-xl text-gray">We serve many customers, ranging from small businesses, medium entrepreneurs, to world-renowned companies. Their satisfaction is our pleasure. We strive to provide the best service by:</p>
-            <p class="snippet__content-xl text-gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem non ipsa in impedit sit possimus molestiae, aspernatur voluptates quis fuga iste aliquam ea alias inventore dolor eligendi soluta itaque officia?</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="space" class="section section--space-md space">
-      <div class="container">
-        <div class="heading">
-          <h2 class="heading__title title title--h4 text-red">Working space</h2>
-          <p class="heading__subtitle title title--h2">Let’s meet our interior room decoration</p>
-        </div>
-        <div class="section__content">
-          <ul class="masonry">
-            <li class="masonry__item">
-              <a href="images/space-1.webp" class="glightbox" data-gallery="gallery-0">
-                <img src="images/space-1.webp" alt="" class="masonry__image">
-              </a>
-            </li>
-            <li class="masonry__item">
-              <a href="images/space-2.webp" class="glightbox" data-gallery="gallery-0">
-                <img src="images/space-2.webp" alt="" class="masonry__image">
-              </a>
-            </li>
-            <li class="masonry__item">
-              <a href="images/space-3.webp" class="glightbox" data-gallery="gallery-0">
-                <img src="images/space-3.webp" alt="" class="masonry__image">
-              </a>
-            </li>
-            <li class="masonry__item">
-              <a href="images/space-4.webp" class="glightbox" data-gallery="gallery-0">
-                <img src="images/space-4.webp" alt="" class="masonry__image">
-              </a>
-            </li>
-            <li class="masonry__item">
-              <a href="images/space-5.webp" class="glightbox" data-gallery="gallery-0">
-                <img src="images/space-5.webp" alt="" class="masonry__image">
-              </a>
-            </li>
-            <li class="masonry__item">
-              <a href="images/space-6.webp" class="glightbox" data-gallery="gallery-0">
-                <img src="images/space-6.webp" alt="" class="masonry__image">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="customer" class="section section--space-md customer">
-      <div class="container">
-        <div class="heading">
-          <h2 class="heading__title title title--h4 text-red">Some of Our Great Customers</h2>
-          <p class="heading__subtitle title title--h2">Some of the companies we have worked with</p>
-        </div>
-        <div class="section__content-lg">
-          <ul class="flex flex--wrap flex--justify-between flex--gap-lg customer__flex">
-            <li class="flex__item">
-              <img src="images/amazon.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/jeep.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/careem.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/hubspot.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/jquery.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/canon.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/fedex.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/bitcoin.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/pirelli.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/philips.svg" alt="" class="customer__icon">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="review" class="section section--space-md review bg-orange text-white">
-      <div class="container">
-        <div class="review-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <article class="quote-card">
-                <img src="images/quote.svg" alt="" class="quote-card__icon">
-                <div class="quote-card__content">
-                  <div class="snippet snippet--center">
-                    <p class="title title--h4 text-regular">We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
-                  </div>
-                </div>
-                <div class="quote-card__content">
-                  <div class="snippet snippet--center">
-                    <p class="title title--h4">Mark Garfield</p>
-                    <p class="snippet__content-sm title title--h4 text-regular">CEO & Head of Product</p>
-                    <p class="snippet__content-lg"></p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="quote-card">
-                <img src="images/quote.svg" alt="" class="quote-card__icon">
-                <div class="quote-card__content">
-                  <div class="snippet snippet--center">
-                    <p class="title title--h4 text-regular">We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
-                  </div>
-                </div>
-                <div class="quote-card__content">
-                  <div class="snippet snippet--center">
-                    <p class="title title--h4">Mark Garfield</p>
-                    <p class="snippet__content-sm title title--h4 text-regular">CEO & Head of Product</p>
-                    <p class="snippet__content-lg"></p>
-                  </div>
-                </div>
-              </article>
+              </li>
+            </ul>
+            <div class="snippet">
+              <h2 id="priority-heading" class="title title--h1">Customer satisfaction is our first priority</h2>
+              <p class="snippet__content-xl text-gray">We serve many customers, ranging from small businesses, medium entrepreneurs, to world-renowned companies. Their satisfaction is our pleasure. We strive to provide the best service by:</p>
+              <p class="snippet__content-xl text-gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem non ipsa in impedit sit possimus molestiae, aspernatur voluptates quis fuga iste aliquam ea alias inventore dolor eligendi soluta itaque officia?</p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
-          <button class="circle-button swiper-prev">
-            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.5892 14.872L9.41083 16.0503L3.82167 10.4612L9.41083 4.87201L10.5892 6.05034L7.01167 9.62784H15V11.2945H7.01167L10.5892 14.872Z" fill="#ABAFC7"/>
-            </svg>
-          </button>
-          <button class="circle-button swiper-next">
-            <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#ABAFC7"/>
-            </svg>
-          </button>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="faq" class="section section--space-md faq">
-      <div class="container">
-        <div class="heading">
-          <h2 class="heading__title title title--h4 text-red">Frequently Ask Question</h2>
-          <p class="heading__subtitle title title--h2">Some of our frequently asked questions</p>
-        </div>
-        <div class="section__content">
-          <div class="faq-accordion accordion">
-            <article class="accordion__item">
-              <div class="accordion__header">
-                <p class="text-sm text-medium">What are the services provided to customers?</p>
-                <img src="images/chevron-down.svg" alt="" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
-                </div>
-              </div>
-            </article>
-            <article class="accordion__item">
-              <div class="accordion__header">
-                <p class="text-sm text-medium">How can I submit a proposal for cooperation?</p>
-                <img src="images/chevron-down.svg" alt="" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
-                </div>
-              </div>
-            </article>
-            <article class="accordion__item">
-              <div class="accordion__header">
-                <p class="text-sm text-medium">I come from a faraway place, can collaboration be done full time online through several meeting applications?</p>
-                <img src="images/chevron-down.svg" alt="" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
-                </div>
-              </div>
-            </article>
-            <article class="accordion__item">
-              <div class="accordion__header">
-                <p class="text-sm text-medium">How do I get the payment complete?</p>
-                <img src="images/chevron-down.svg" alt="" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
-                </div>
-              </div>
-            </article>
-            <article class="accordion__item">
-              <div class="accordion__header">
-                <p class="text-sm text-medium">How long can the collaboration last?</p>
-                <img src="images/chevron-down.svg" alt="" class="accordion__icon">
-              </div>
-              <div class="accordion__content text-gray">
-                <div class="content">
-                  <p>Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
-                </div>
-              </div>
-            </article>
+      <section id="space" aria-labelledby="space-heading" class="section section--space-md space">
+        <div class="container">
+          <div class="heading">
+            <h2 id="space-heading" class="heading__title title title--h4 text-red">Working space</h2>
+            <p class="heading__subtitle title title--h2">Let’s meet our interior room decoration</p>
+          </div>
+          <div class="section__content">
+            <ul aria-label="Office interior and workspace gallery" class="masonry">
+              <li class="masonry__item">
+                <a href="images/space-1.webp" class="glightbox" data-gallery="gallery-0">
+                  <img src="images/space-1.webp" alt="Working space front view" class="masonry__image">
+                </a>
+              </li>
+              <li class="masonry__item">
+                <a href="images/space-2.webp" class="glightbox" data-gallery="gallery-0">
+                  <img src="images/space-2.webp" alt="Working space side view" class="masonry__image">
+                </a>
+              </li>
+              <li class="masonry__item">
+                <a href="images/space-3.webp" class="glightbox" data-gallery="gallery-0">
+                  <img src="images/space-3.webp" alt="Working space top view" class="masonry__image">
+                </a>
+              </li>
+              <li class="masonry__item">
+                <a href="images/space-4.webp" class="glightbox" data-gallery="gallery-0">
+                  <img src="images/space-4.webp" alt="Working space left view" class="masonry__image">
+                </a>
+              </li>
+              <li class="masonry__item">
+                <a href="images/space-5.webp" class="glightbox" data-gallery="gallery-0">
+                  <img src="images/space-5.webp" alt="Working space right view" class="masonry__image">
+                </a>
+              </li>
+              <li class="masonry__item">
+                <a href="images/space-6.webp" class="glightbox" data-gallery="gallery-0">
+                  <img src="images/space-6.webp" alt="Working space back view" class="masonry__image">
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="testimonial" class="section section--space-md testimonial bg-silver">
-      <div class="container">
-        <div class="heading">
-          <h2 class="heading__title title title--h4 text-red">Testimonials</h2>
-          <p class="heading__subtitle title title--h2">Some testimonials from our customers</p>
+      <section id="customer" aria-labelledby="customer-heading" class="section section--space-md customer">
+        <div class="container">
+          <div class="heading">
+            <h2 id="customer-heading" class="heading__title title title--h4 text-red">Some of Our Great Customers</h2>
+            <p class="heading__subtitle title title--h2">Some of the companies we have worked with</p>
+          </div>
+          <div class="section__content-lg">
+            <ul aria-label="List of client companies we've worked with" class="flex flex--wrap flex--justify-between flex--gap-lg customer__flex">
+              <li aria-label="Amazon" class="flex__item">
+                <img src="images/amazon.svg" alt="Amazon log" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Jeep" class="flex__item">
+                <img src="images/jeep.svg" alt="Jeep logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Careem" class="flex__item">
+                <img src="images/careem.svg" alt="Careem logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Hubspot" class="flex__item">
+                <img src="images/hubspot.svg" alt="Hubspot logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="jQuery" class="flex__item">
+                <img src="images/jquery.svg" alt="jQuery logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Canon" class="flex__item">
+                <img src="images/canon.svg" alt="Canon logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Fedex" class="flex__item">
+                <img src="images/fedex.svg" alt="Fedex logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Bitcoin" class="flex__item">
+                <img src="images/bitcoin.svg" alt="Bitcoin logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Pirelli" class="flex__item">
+                <img src="images/pirelli.svg" alt="Pirelli logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Philips" class="flex__item">
+                <img src="images/philips.svg" alt="Philips logo" aria-hidden="true" class="customer__icon">
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="section__content">
-          <ul class="grid grid--sm-cols-three">
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-1.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
-                    <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Ronald Richards</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Google inc.</p>
-                      <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+      </section>
+
+      <section id="review" aria-labelledby="review-heading" class="section section--space-md review bg-orange">
+        <div class="container">
+          <h2 id="review-heading" class="sr-only">Reviews</h2>
+          <div class="review-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article aria-labelledby="review-heading-1" class="quote-card">
+                  <img src="images/quote.svg" alt="" aria-hidden="true" class="quote-card__icon">
+                  <h3 id="review-heading-1" class="sr-only">User review from Steve Garfield</h3>
+                  <div class="quote-card__content">
+                    <blockquote class="snippet snippet--center">
+                      <p class="title title--h4 text-regular">We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
+                    </blockquote>
                   </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-2.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
+                  <footer class="quote-card__content">
                     <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Guy Hawkins</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Paypal inc.</p>
-                      <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
+                      <p class="title title--h4">Steve Garfield</p>
+                      <p class="snippet__content-sm title title--h4 text-regular">CEO & Head of Product</p>
+                      <p class="snippet__content-lg"></p>
                     </div>
+                  </footer>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article aria-labelledby="review-heading-2" class="quote-card">
+                  <img src="images/quote.svg" alt="" aria-hidden="true" class="quote-card__icon">
+                  <h3 id="review-heading-2" class="sr-only">User review from Mark Garfield</h3>
+                  <div class="quote-card__content">
+                    <blockquote class="snippet snippet--center">
+                      <p class="title title--h4 text-regular">We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
+                    </blockquote>
                   </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-3.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
+                  <footer class="quote-card__content">
                     <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Kristin Watson</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Microsoft inc.</p>
-                      <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
+                      <p class="title title--h4">Mark Garfield</p>
+                      <p class="snippet__content-sm title title--h4 text-regular">CEO & Head of Product</p>
+                      <p class="snippet__content-lg"></p>
                     </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-4.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
-                    <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Robert Fox</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Facebook inc.</p>
-                      <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-5.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
-                    <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Savannah Nguyen</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Twitter inc.</p>
-                      <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-6.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
-                    <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Courtney Henry</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Apple inc.</p>
-                      <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-          </ul>
+                  </footer>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button aria-label="Previous slide" class="circle-button swiper-prev">
+              <svg class="circle-button__icon" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Previous slide</title>
+                <path d="M10.5892 14.872L9.41083 16.0503L3.82167 10.4612L9.41083 4.87201L10.5892 6.05034L7.01167 9.62784H15V11.2945H7.01167L10.5892 14.872Z" fill="#ABAFC7"/>
+              </svg>
+            </button>
+            <button aria-label="Next slide" class="circle-button swiper-next">
+              <svg class="circle-button__icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Next slide</title>
+                <path d="M9.91083 14.5913L11.0892 15.7696L16.6783 10.1805L11.0892 4.59131L9.91083 5.76964L13.4883 9.34714H5.5V11.0138H13.4883L9.91083 14.5913Z" fill="#ABAFC7"/>
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="faq" aria-labelledby="faq-heading" class="section section--space-md faq">
+        <div class="container">
+          <div class="heading">
+            <h2 id="faq-heading" class="heading__title title title--h4 text-red">Frequently Ask Question</h2>
+            <p class="heading__subtitle title title--h2">Some of our frequently asked questions</p>
+          </div>
+          <div class="section__content">
+            <ul aria-label="Frequently asked questions" class="faq-accordion accordion">
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <p class="text-sm text-medium">What are the services provided to customers?</p>
+                  <img src="images/chevron-down.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <p class="text-sm text-medium">How can I submit a proposal for cooperation?</p>
+                  <img src="images/chevron-down.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <p class="text-sm text-medium">I come from a faraway place, can collaboration be done full time online through several meeting applications?</p>
+                  <img src="images/chevron-down.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <p class="text-sm text-medium">How do I get the payment complete?</p>
+                  <img src="images/chevron-down.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__header">
+                  <p class="text-sm text-medium">How long can the collaboration last?</p>
+                  <img src="images/chevron-down.svg" alt="" aria-hidden="true" class="accordion__icon">
+                </div>
+                <div class="accordion__content text-gray">
+                  <div class="content">
+                    <p>Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial" aria-labelledby="testimonial-heading" class="section section--space-md testimonial bg-silver">
+        <div class="container">
+          <div class="heading">
+            <h2 id="testimonial-heading" class="heading__title title title--h4 text-red">Testimonials</h2>
+            <p class="heading__subtitle title title--h2">Some testimonials from our customers</p>
+          </div>
+          <div class="section__content">
+            <ul aria-label="Customer testimonials" class="grid grid--sm-cols-three">
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-1.webp" alt="Ronald Richards" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Ronald Richards</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Google inc.</p>
+                        <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-2.webp" alt="Guy Hawkins" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Guy Hawkins</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Paypal inc.</p>
+                        <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-3.webp" alt="Kristin Watson" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Kristin Watson</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Microsoft inc.</p>
+                        <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-4.webp" alt="Robert Fox" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Robert Fox</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Facebook inc.</p>
+                        <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-5.webp" alt="Savannah Nguyen" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Savannah Nguyen</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Twitter inc.</p>
+                        <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-6.webp" alt="Courtney Henry" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Courtney Henry</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Apple inc.</p>
+                        <p class="snippet__content-lg text-md text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
     @@include('./parts/footer.html')
 

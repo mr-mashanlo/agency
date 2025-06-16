@@ -8,322 +8,338 @@
 
     @@include('./parts/header.html')
 
-    <section class="section section--space-sm">
-      <div class="container">
-        <div class="banner banner--gray">
-          <div class="snippet snippet--center snippet--wide">
-            <h1 class="title title--h2">Check out some of our amazing projects!</h1>
-            <p class="snippet__content-xl text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis autem asperiores magni, iure delectus excepturi! Iste voluptate porro hic!</p>
+    <main>
+
+      <section id="intro" aria-labelledby="intro-heading" class="section section--space-sm">
+        <div class="container">
+          <div class="banner banner--gray">
+            <div class="snippet snippet--center snippet--wide">
+              <h1 id="intro-heading" class="title title--h2">Check out some of our amazing projects!</h1>
+              <p class="snippet__content-xl text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officiis autem asperiores magni, iure delectus excepturi! Iste voluptate porro hic!</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="customer" class="section section--space-md customer">
-      <div class="container">
-        <div class="heading">
-          <h2 class="heading__title title title--h4 text-red">Some of Our Great Customers</h2>
-          <p class="heading__subtitle title title--h2">Some of the companies we have worked with</p>
+      <section id="customer" aria-labelledby="customer-heading" class="section section--space-md customer">
+        <div class="container">
+          <div class="heading">
+            <h2 id="customer-heading" class="heading__title title title--h4 text-red">Some of Our Great Customers</h2>
+            <p class="heading__subtitle title title--h2">Some of the companies we have worked with</p>
+          </div>
+          <div class="section__content-lg">
+            <ul aria-label="List of client companies we've worked with" class="flex flex--wrap flex--justify-between flex--gap-lg customer__flex">
+              <li aria-label="Amazon" class="flex__item">
+                <img src="images/amazon.svg" alt="Amazon logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Jeep" class="flex__item">
+                <img src="images/jeep.svg" alt="Jeep logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Careem" class="flex__item">
+                <img src="images/careem.svg" alt="Careem logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Hubspot" class="flex__item">
+                <img src="images/hubspot.svg" alt="Hubspot logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="jQuery" class="flex__item">
+                <img src="images/jquery.svg" alt="jQuery logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Canon" class="flex__item">
+                <img src="images/canon.svg" alt="Canon logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Fedex" class="flex__item">
+                <img src="images/fedex.svg" alt="Fedex logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="bitcoin" class="flex__item">
+                <img src="images/bitcoin.svg" alt="bitcoin logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Pirelli" class="flex__item">
+                <img src="images/pirelli.svg" alt="Pirelli logo" aria-hidden="true" class="customer__icon">
+              </li>
+              <li aria-label="Philips" class="flex__item">
+                <img src="images/philips.svg" alt="Philips logo" aria-hidden="true" class="customer__icon">
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="section__content-lg">
-          <ul class="flex flex--wrap flex--justify-between flex--gap-lg customer__flex">
-            <li class="flex__item">
-              <img src="images/amazon.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/jeep.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/careem.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/hubspot.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/jquery.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/canon.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/fedex.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/bitcoin.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/pirelli.svg" alt="" class="customer__icon">
-            </li>
-            <li class="flex__item">
-              <img src="images/philips.svg" alt="" class="customer__icon">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="project" class="section section--space-md project">
-      <div class="container">
-        <div class="heading">
-          <h2 class="heading__title title title--h4 text-red">Our Latest Project</h2>
-          <p class="heading__subtitle title title--h2">This is the last variety of projects we have worked on</p>
+      <section id="project" aria-labelledby="project-heading" class="section section--space-md project">
+        <div class="container">
+          <div class="heading">
+            <h2 id="project-heading" class="heading__title title title--h4 text-red">Our Latest Project</h2>
+            <p class="heading__subtitle title title--h2">This is the last variety of projects we have worked on</p>
+          </div>
+          <div class="section__content">
+            <ul aria-label="Our most recent completed projects" class="grid grid--cols-one">
+              <li class="grid__item">
+                <article aria-labelledby="project-heading-1" class="project-card project-card--blue">
+                  <div class="project-card__content">
+                    <div class="snippet">
+                      <h3 id="project-heading-1" class="title title--h4">M’Course</h3>
+                      <p class="snippet__content-xl">Online learning application course</p>
+                    </div>
+                  </div>
+                  <div class="project-card__figure">
+                    <img src="images/project-1.webp" alt="" aria-hidden="true" class="project-card__image">
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article aria-labelledby="project-heading-2" class="project-card project-card--red">
+                  <div class="project-card__content">
+                    <div class="snippet">
+                      <h3 id="project-heading-2" class="title title--h4">POPcorn</h3>
+                      <p class="snippet__content-xl">Application for buying and selling coffee online</p>
+                    </div>
+                  </div>
+                  <div class="project-card__figure">
+                    <img src="images/project-2.webp" alt="" aria-hidden="true" class="project-card__image">
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article aria-labelledby="project-heading-3" class="project-card project-card--dark">
+                  <div class="project-card__content">
+                    <div class="snippet">
+                      <h3 id="project-heading-3" class="title title--h4">Alpaca</h3>
+                      <p class="snippet__content-xl">Fundraising and caring for alpacas</p>
+                    </div>
+                  </div>
+                  <div class="project-card__figure">
+                    <img src="images/project-3.webp" alt="" aria-hidden="true" class="project-card__image">
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="section__content">
-          <ul class="grid grid--cols-one">
-            <li class="grid__item">
-              <div class="project-card project-card--blue">
-                <div class="project-card__content">
-                  <div class="snippet">
-                    <h3 class="title title--h4">M’Course</h3>
-                    <p class="snippet__content-xl">Online learning application course</p>
-                  </div>
-                </div>
-                <div class="project-card__figure">
-                  <img src="images/project-1.webp" alt="" class="project-card__image">
-                </div>
-              </div>
-            </li>
-            <li class="grid__item">
-              <div class="project-card project-card--red">
-                <div class="project-card__content">
-                  <div class="snippet">
-                    <h3 class="title title--h4">POPcorn</h3>
-                    <p class="snippet__content-xl">Application for buying and selling coffee online</p>
-                  </div>
-                </div>
-                <div class="project-card__figure">
-                  <img src="images/project-2.webp" alt="" class="project-card__image">
-                </div>
-              </div>
-            </li>
-            <li class="grid__item">
-              <div class="project-card project-card--dark">
-                <div class="project-card__content">
-                  <div class="snippet">
-                    <h3 class="title title--h4">Alpaca</h3>
-                    <p class="snippet__content-xl">Fundraising and caring for alpacas</p>
-                  </div>
-                </div>
-                <div class="project-card__figure">
-                  <img src="images/project-3.webp" alt="" class="project-card__image">
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="testimonial" class="section section--space-md testimonial bg-silver">
-      <div class="container">
-        <div class="heading">
-          <h2 class="heading__title title title--h4 text-red">Testimonials</h2>
-          <p class="heading__subtitle title title--h2">Some testimonials from our customers</p>
+      <section id="testimonial" aria-labelledby="testimonial-heading" class="section section--space-md testimonial bg-silver">
+        <div class="container">
+          <div class="heading">
+            <h2 id="testimonial-heading" class="heading__title title title--h4 text-red">Testimonials</h2>
+            <p class="heading__subtitle title title--h2">Some testimonials from our customers</p>
+          </div>
+          <div class="section__content">
+            <ul aria-label="Customer testimonials" class="grid grid--sm-cols-three">
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-1.webp" alt="Ronald Richards" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Ronald Richards</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Google inc.</p>
+                        <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-2.webp" alt="Guy Hawkins" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Guy Hawkins</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Paypal inc.</p>
+                        <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-3.webp" alt="Kristin Watson" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Kristin Watson</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Microsoft inc.</p>
+                        <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-4.webp" alt="Robert Fox" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Robert Fox</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Facebook inc.</p>
+                        <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-5.webp" alt="Savannah Nguyen" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Savannah Nguyen</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Twitter inc.</p>
+                        <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="grid__item">
+                <article class="card testimonial-card">
+                  <div class="card__content-lg">
+                    <img src="images/testimonial-6.webp" alt="Courtney Henry" class="testimonial-card__icon">
+                    <div class="testimonial-card__content">
+                      <div class="snippet snippet--center">
+                        <h3 class="title title--h3">Courtney Henry</h3>
+                        <p class="snippet__content-sm text-sm text-gray">Apple inc.</p>
+                        <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="snippet__content-lg">
+                          <div role="img" aria-label="Rating: 5 out of 5 stars">
+                            <ul class="star" aria-hidden="true">
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                              <li class="star__item">
+                                <img src="images/star.svg" alt="" class="start__icon">
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="section__content">
-          <ul class="grid grid--sm-cols-three">
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-1.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
-                    <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Ronald Richards</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Google inc.</p>
-                      <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-2.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
-                    <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Guy Hawkins</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Paypal inc.</p>
-                      <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-3.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
-                    <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Kristin Watson</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Microsoft inc.</p>
-                      <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-4.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
-                    <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Robert Fox</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Facebook inc.</p>
-                      <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-5.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
-                    <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Savannah Nguyen</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Twitter inc.</p>
-                      <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="grid__item">
-              <article class="card testimonial-card">
-                <div class="card__content-lg">
-                  <img src="images/testimonial-6.webp" alt="" class="testimonial-card__icon">
-                  <div class="testimonial-card__content">
-                    <div class="snippet snippet--center">
-                      <h3 class="title title--h3">Courtney Henry</h3>
-                      <p class="snippet__content-sm text-sm text-gray">Apple inc.</p>
-                      <p class="snippet__content-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                      <div class="snippet__content-lg">
-                        <ul class="star">
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                          <li class="star__item">
-                            <img src="images/star.svg" alt="" class="start__icon">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+
+    </main>
 
     @@include('./parts/footer.html')
 

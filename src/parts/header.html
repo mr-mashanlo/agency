@@ -1,31 +1,34 @@
 <header class="header">
   <div class="container">
     <div class="header__navigation">
-      <a href="/" class="brand header__brand">
-        <img src="images/logo.svg" alt="" class="brand__image">
+      <a href="/" title="Go to homepage" class="brand header__brand">
+        <img src="images/logo.svg" alt="C agency" class="brand__image">
       </a>
       <div class="header__slider">
-        <ul class="menu header__menu">
-          <li class="menu__item">
-            <a href="/" class="text-semibold text-gray">Home</a>
-          </li>
-          <li class="menu__item">
-            <a href="works.html" class="text-semibold text-gray">Works</a>
-          </li>
-          <li class="menu__item">
-            <a href="about.html" class="text-semibold text-gray">About</a>
-          </li>
-        </ul>
+        <nav aria-label="Header navigation">
+          <ul class="menu header__menu">
+            <li class="menu__item">
+              <a href="/" class="text-semibold text-gray">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="works.html" class="text-semibold text-gray">Works</a>
+            </li>
+            <li class="menu__item">
+              <a href="about.html" class="text-semibold text-gray">About</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <a href="" class="header__button button">Contact us</a>
       <button class="header__hamburger hamburger-button">
-        <div class="hamburger hamburger--chop">
-          <div class="inner">
+        <span class="sr-only">Open menu</span>
+        <span aria-hidden="true" class="hamburger hamburger--chop">
+          <span class="inner">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-          </div>
-        </div>
+          </span>
+        </span>
       </button>
     </div>
   </div>
